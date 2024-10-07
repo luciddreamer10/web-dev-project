@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>My E-commerce Site</title>
+    <a href="userprofile.html" class="btn-profile" style="float: right;">Profile</a> <!-- Profile Button -->
+    <a href="registration.html" class="btn-signup" style="float: right">Sign Up &#160</a> <!-- Sign Up Button -->
+    <a href="login1.html" class="btn-login" style="float: right">Login &#160</a> <!-- Login Button -->
+    <link rel="stylesheet" type="text/css" href="styles1.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            // Traverse and log all elements in the DOM
+            $('*').each(function() {
+                console.log($(this));  // Logs the current element to the console
+            });
+        });
+    </script>
+</head>
+<body>
+    <section id="page">
+        <header>
+            <hgroup>
+                <img src="SHOPIGO!.jpg" width="30%" alt="Logo">
+                <h3>My E-commerce Site</h3>
+            </hgroup>
+            <nav class="clear">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#cart">Cart</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="articles">
+            <div class="line"></div>
+            <article id="home">
+                <h2>Welcome to Our Store</h2>
+                <figure>
+                    <img src="store.jpg" alt="Store">
+                </figure>
+                <div class="line"></div>
+                <div class="articleBody clear">
+                    <p>Welcome to our e-commerce store. We offer a wide range of products to cater to your needs. Enjoy shopping with us!</p>
+                </div>
+            </article>
+            <div class="line"></div>
+            <article id="products">
+                <h2>Our Products</h2>
+                <figure>
+                    <img src="product.jpg" alt="Products">
+                </figure>
+                <div class="line"></div>
+                <div class="articleBody clear">
+                    <p>Explore our diverse range of products including electronics, fashion, home appliances, and more. Quality products at unbeatable prices.</p>
+                </div>
+            </article>
+            <div class="line"></div>
+            <article id="cart">
+                <h2>Your Cart</h2>
+                <figure>
+                    <a href="cart.html"><img src="cart.jpg" alt="Cart"></a> 
+                </figure>
+                <div class="line"></div>
+                <div class="articleBody clear">
+                    <p>Your shopping cart is currently empty. Add items to your cart to see them here.</p>
+                </div>
+            </article>
+            <div class="line"></div>
+            <article id="contact">
+                <h2>Contact Us</h2>
+                <figure>
+                    <img src="contact us.jpg" alt="Contact">
+                </figure>
+                <div class="line"></div>
+                <div class="articleBody clear">
+                    <p>If you have any questions or need assistance, please don't hesitate to contact us. We're here to help!</p>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <div class="line"></div>
+            <a href="#" class="up">Go UP</a>
+        </footer>
+    </section>
+</body>
+</html>
